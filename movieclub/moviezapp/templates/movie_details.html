@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300">
+    <div class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex">
+            <div class="w-1/3 bg-cover bg-center h-screen" style="background-image: url('{{ movie.Poster }}');"></div>
+            <div class="w-2/3 p-6 flex flex-col justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold mb-4">{{ movie.Title }}</h1>
+                    <p class="mb-4 text-lg"><strong>Plot:</strong> {{ movie.plot }}</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p><strong>Director:</strong> {{ movie.Director }}</p>
+                            <p><strong>Actors:</strong> {{ movie.Actors }}</p>
+                            <p><strong>Writer:</strong> {{ movie.Writer }}</p>
+                            <p><strong>Released:</strong> {{ movie.Released }}</p>
+                            <p><strong>Runtime:</strong> {{ movie.Runtime }}</p>
+                            <p><strong>Genre:</strong> {{ movie.Genre }}</p>
+                        </div>
+                        <div>
+                            <p><strong>Rated:</strong> {{ movie.Rated }}</p>
+                            <p><strong>IMDb Rating:</strong> {{ movie.ImdbRating }}</p>
+                            <p><strong>IMDb Votes:</strong> {{ movie.ImdbVotes }}</p>
+                            <p><strong>Box Office:</strong> {{ movie.BoxOffice }}</p>
+                            <p><strong>Language:</strong> {{ movie.Language }}</p>
+                            <p><strong>Awards:</strong> {{ movie.Awards }}</p>
+                            <p><strong>Country:</strong> {{ movie.Country }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="{% url 'homepage' %}" class="text-blue-500">Back to search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+from django.db import models
+
+class Movie(models.Model):
+    Title = models.CharField(default="N/A")
+    Year = models.CharField(default="N/A")
+    Rated = models.CharField( default="N/A")
+    Released = models.CharField(default="N/A")
+    Runtime = models.CharField(default="N/A")
+    Genre = models.CharField(default="N/A")
+    Director = models.CharField(default="N/A")
+    Writer = models.CharField(default="N/A")
+    Actors = models.CharField(default="N/A")
+    plot = models.CharField(default="N/A")
+    Poster = models.URLField(default="N/A")
+    ImdbRating = models.CharField(default="N/A")
+    ImdbVotes = models.CharField(default="N/A")
+    BoxOffice = models.CharField(default="N/A")
+    Language = models.CharField( default="N/A")
+    Awards = models.CharField( default="N/A")
+    Country = models.CharField( default="N/A")

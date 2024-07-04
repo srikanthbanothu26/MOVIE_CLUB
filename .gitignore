@@ -1,0 +1,13 @@
+# Ignore environment files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+venv/
+# Ignore other files and directories as needed
+trail.py
