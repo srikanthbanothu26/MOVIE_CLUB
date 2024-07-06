@@ -60,7 +60,7 @@ def homepage(request):
  
 @login_required   
 def movie_details(request, movie_id):
-    movie = Movie.objects.filter(id=movie_id)
+    movie =get_object_or_404(Movie, id=movie_id)
     return render(request, "movie_details.html", {"movie": movie})
 
 @login_required
